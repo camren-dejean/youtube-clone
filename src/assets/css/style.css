@@ -1,0 +1,134 @@
+:root {
+    --color-dark: #0f0f0f;
+    --color-off-white:#f1f1f1;
+    --color-searchbox-border: hsl(0,0%,18.82%);
+    --color-searchbox-text: hsl(0,100%,100%,0.88);
+    --color-search-icon:var(--color-off-white);
+    --color-search-bg:hsla(0,0%,100%,0.08);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-dark);
+    color: white;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+ /*
+    Header
+  */
+  header{
+    padding: 18px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+
+  .youtube-box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .menu-button {
+    fill: white;
+    
+  }
+
+  .youtube-logo {
+    width: 90px;
+    height: 20px;
+ }
+
+ .youtube-logo {
+    fill: white;
+ }
+.search-bar{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+ .search-input-container{
+border: 1px solid var(--color-searchbox-border);
+border-radius: 40px;
+height: 40px;
+display: flex;
+    align-items: center;
+    overflow: hidden;
+ }
+
+ .search-input{
+  background-color: transparent;
+  border: 0;
+  padding: 0px 4px 0px 16px;
+  height: 24px;
+  color: var(--color-searchbox-text);
+  width: 514px;
+ }
+ .search-button{
+  background-color: var(--color-search-bg);
+  border: 0;
+  color:var(--color-search-icon);
+  height: 40px;
+    width: 64px;
+ }
+ .search-button svg{
+  height: 24px !important;
+  width: 24px !important;
+  margin: 0px auto;
+ }
+ .mic-button{
+  height: 40px;
+  width: 40px;
+  background-color:var(--color-search-bg) ;
+  border: 0;
+  border-radius: 100%;
+  color:var(--color-off-white) ;
+ }
+
+ .mic-button svg{
+  height: 20px!important;
+  width: 20px !important;
+  margin: 0px auto;
+ }
+ 
